@@ -1,0 +1,71 @@
+.hero {
+  background: url("./images/hero.png");
+  height: 80vh;
+}
+
+.card-reputation {
+  max-width: 300px;
+}
+
+.consult{
+  background: url("./images/ads.png");
+  height: 50vh;
+}
+
+.form {
+  max-width: 800px;
+}
+.form input[name=message] {
+  height: 100px !important;
+}
+.form input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.services{
+  background-color: #F6F8F7;
+  .card-body{
+    height:200px;
+    background-color: #2947A9;
+    color:white
+  }
+  .row{
+    width: 80%;
+  }
+
+  .col:nth-child(odd) > .card-body{
+    background-color: white;
+    color: #2947A9;
+  }
+}
+
+.services{
+  .col:nth-child(odd) > .card-body{
+    background-color: white;
+    color:#2947A9;
+  }
+}
+.consult{
+  span {
+    text-decoration: underline;
+  }
+}
+@media (min-width: 992px) {
+  .consult{
+    height: 30vh;
+  }
+  .about {
+    position: relative !important;
+    left: 15%;
+  }
+  .about img {
+    width: 60% !important;
+  }
+  .about-container {
+    position: absolute !important;
+    top: 20%;
+    left: 50%;
+    width: 400px;
+  }
+}/*# sourceMappingURL=styles.css.map */
