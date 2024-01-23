@@ -1,41 +1,204 @@
-.hero{
-    background: url("./images/hero.png");
-    height: 80vh;
+.nav-link:hover {
+    color: #F9995D !important;
 }
 
-.card-reputation{
+.hero {
+    background: url("./images/hero.png");
+    height: 80vh;
+
+    h2 {
+        max-width: 550px;
+    }
+}
+
+.focus-ring{
+    --bs-focus-ring-color: rgba(#fff,0);
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.feature {
+    background-color: #3559C7;
+}
+
+.card-reputation {
     max-width: 300px;
 }
 
-.form{
-    max-width: 800px;
+.bg-primary,
+.btn-primary {
+    background-color: #2947A9 !important;
+}
 
-    input[name=message]{
+.text-primary {
+    color: #2947A9 !important;
+}
+
+.projects h5 {
+    color: #C2C7D6 !important;
+    border-left: 5px solid white;
+
+    &:hover {
+        color: #2947A9 !important;
+        border-left: 5px solid #2947A9;
+    }
+}
+
+.form {
+    .form-container {
+        max-width: 800px;
+    }
+
+    background-color: #F6F8F7;
+
+    input[name=message] {
         height: 100px !important;
     }
-    input:focus{
-        outline: none !important;
-        border: none !important;  
+}
+
+.service-card {
+    height: 250px;
+    background-color: white;
+    transition: transform 300ms ease-in-out;
+    img {
+        border-bottom: 1px solid grey;
+    }
+    &:hover {
+        transform: scale(1.1);
     }
 }
 
-@media (min-width:992px){
+.col:nth-child(even) .service-card {
+    background-color: #2947A9 !important;
+    color: white;
 
-    .about{
-        position: relative !important;
-        left:15%;
-        img{
-            width:60% !important;
+    img {
+        border-bottom: 1px solid white;
+    }
+}
+
+.consult {
+    background: url("./images/ads.png");
+}
+
+.stat-card {
+    width: 280px !important;
+    box-shadow: 2px 2px 5px grey !important;
+
+    h5 {
+        border-left: 5px solid #F9995D;
+    }
+
+    img {
+        top: 0;
+        right: 5%;
+    }
+}
+
+.project-card {
+    max-width: 300px !important;
+}
+
+.experience-right {
+    max-width: 400px;
+}
+
+.footer {
+    .col-sm-12 {
+        max-width: 550px;
+        margin: auto;
+    }
+    button {
+        background-color: #F9995D;
+
+        &:hover {
+            background-color: #F9995D;
         }
     }
-    .about-container{
-        position: absolute !important;
-        top:20%;
-        left:50%;
-        width:400px;
-    }
 }
 
 
+@media (min-width:992px) {
 
+    .about {
+        margin-left: 50px;
+        img {
+            width: 75% !important;
+            left: -20px;
+        }
+    }
 
+    .experience-info {
+        h2 {
+            font-size: 60px !important;
+        }
+    }
+
+    .about-container {
+        position: absolute !important;
+        top: 20%;
+        left: 60%;
+        width: 400px;
+    }
+
+    .experience-card-group {
+        max-width: 700px;
+        height: 480px !important;
+
+        h2 {
+            font-size: 72px !important;
+        }
+
+        h5 {
+            font-size: 24px !important;
+        }
+    }
+
+    .project-card {
+        max-width: 450px !important;
+    }
+
+    .stat-card {
+        position: absolute !important;
+        background-color: white;
+        img{
+            right:-10%;
+            top:-20%;
+        }
+    }
+
+    .stat-card:nth-child(1) {
+        right: 10%;
+        top: -10%;
+        z-index: 2;
+    }
+
+    .stat-card:nth-child(2) {
+        left: 20%;
+        top: 20%;
+
+        img {
+            left: -15%;
+            top: -20%;
+        }
+    }
+
+    .stat-card:nth-child(3) {
+        right: 15%;
+        top: 50%;
+        z-index: 2;
+    }
+
+    .stat-card:nth-child(4) {
+        left: 25%;
+        top:80%;
+
+        img {
+            right:-10%;
+            top:auto;
+            bottom:-10%;
+        }
+    }
+}
