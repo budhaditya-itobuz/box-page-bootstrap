@@ -11,8 +11,12 @@
     }
 }
 
-.focus-ring{
-    --bs-focus-ring-color: rgba(#fff,0);
+.address{
+    min-height: 90px !important;
+}
+
+.focus-ring {
+    --bs-focus-ring-color: rgba(#fff, 0);
 }
 
 .pointer:hover {
@@ -62,9 +66,11 @@
     height: 250px;
     background-color: white;
     transition: transform 300ms ease-in-out;
+
     img {
         border-bottom: 1px solid grey;
     }
+
     &:hover {
         transform: scale(1.1);
     }
@@ -101,7 +107,7 @@
     max-width: 300px !important;
 }
 
-.experience-right {
+.experience-info {
     max-width: 400px;
 }
 
@@ -110,6 +116,7 @@
         max-width: 550px;
         margin: auto;
     }
+
     button {
         background-color: #F9995D;
 
@@ -119,11 +126,17 @@
     }
 }
 
+@media (min-width:576px){
+    .address{
+        min-height: 0 !important;
+    }
+}
 
 @media (min-width:992px) {
 
     .about {
         margin-left: 50px;
+
         img {
             width: 75% !important;
             left: -20px;
@@ -163,9 +176,10 @@
     .stat-card {
         position: absolute !important;
         background-color: white;
-        img{
-            right:-10%;
-            top:-20%;
+
+        img {
+            right: -10%;
+            top: -20%;
         }
     }
 
@@ -193,12 +207,12 @@
 
     .stat-card:nth-child(4) {
         left: 25%;
-        top:80%;
+        top: 80%;
 
         img {
-            right:-10%;
-            top:auto;
-            bottom:-10%;
+            right: -10%;
+            top: auto;
+            bottom: -10%;
         }
     }
 }

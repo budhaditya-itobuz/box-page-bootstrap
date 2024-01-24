@@ -10,8 +10,12 @@
   max-width: 550px;
 }
 
+.address {
+  min-height: 90px !important;
+}
+
 .focus-ring {
-  --bs-focus-ring-color: rgba(#fff,0);
+  --bs-focus-ring-color: rgba(#fff, 0);
 }
 
 .pointer:hover {
@@ -94,7 +98,7 @@
   max-width: 300px !important;
 }
 
-.experience-right {
+.experience-info {
   max-width: 400px;
 }
 
@@ -109,6 +113,11 @@
   background-color: #F9995D;
 }
 
+@media (min-width: 576px) {
+  .address {
+    min-height: 0 !important;
+  }
+}
 @media (min-width: 992px) {
   .about {
     margin-left: 50px;
